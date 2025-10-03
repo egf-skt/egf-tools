@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service • eGangotri Foundation Tools</title>
+  <link rel="icon" type="image/png" href="egangotri-1.png" />
+  <style>
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background: #0f172a; color: #e5e7eb; }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #1f2937; background: rgba(15,23,42,0.85); position: sticky; top:0; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    .nav { display:flex; align-items:center; justify-content: space-between; height:64px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:700; }
+    .brand img{ width:32px; height:32px; border-radius:8px; }
+    main { padding: 24px 0 40px; }
+    h1 { font-size: 28px; margin: 12px 0 8px; }
+    h2 { font-size: 18px; margin: 18px 0 8px; }
+    p, li { color: #cbd5e1; }
+    footer { border-top:1px solid #1f2937; color:#94a3b8; }
+    .foot{ display:flex; align-items:center; justify-content:space-between; padding:12px 0; font-size:14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="egangotri-1.png" alt="eGangotri" />
+        <span>eGangotri Foundation Tools</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacyPolicy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1>Terms of Service</h1>
+    <p>Last updated: <span id="lastUpdated"></span></p>
+
+    <h2>Acceptance of Terms</h2>
+    <p>
+      By using eGangotri Foundation tools, you agree to these Terms. If you are operating on behalf of an
+      institution, you represent that you have authority to bind the institution to these Terms.
+    </p>
+
+    <h2>Use of the Tools</h2>
+    <ul>
+      <li>Use the tools in accordance with applicable preservation and access policies.</li>
+      <li>Comply with all laws and regulations, including copyright and data protection.</li>
+      <li>Maintain appropriate backups and review dry-run/audit outputs prior to bulk changes.</li>
+    </ul>
+
+    <h2>Accounts and Access</h2>
+    <ul>
+      <li>You are responsible for safeguarding credentials and restricting dashboard access.</li>
+      <li>Institutional administrators may configure roles, policies, and connectivity (e.g., MongoDB Atlas access lists).</li>
+    </ul>
+
+    <h2>Data and Content</h2>
+    <ul>
+      <li>You retain ownership and responsibility for all content processed using the tools.</li>
+      <li>Where AI-assisted features are used, validate outputs before committing changes.</li>
+    </ul>
+
+    <h2>Warranties and Disclaimers</h2>
+    <p>
+      The tools are provided “as is” without warranties of any kind. eGangotri Foundation disclaims any implied
+      warranties of merchantability, fitness for a particular purpose, and non-infringement.
+    </p>
+
+    <h2>Limitation of Liability</h2>
+    <p>
+      To the maximum extent permitted by law, eGangotri Foundation shall not be liable for any indirect, incidental,
+      special, consequential, or punitive damages, or any loss of data or profits.
+    </p>
+
+    <h2>Changes to Terms</h2>
+    <p>
+      We may update these Terms from time to time. Continued use after changes constitutes acceptance of the updated Terms.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For questions regarding these Terms, contact the eGangotri Foundation team.
+    </p>
+  </main>
+  <footer>
+    <div class="container foot">
+      <span>© <span id="year"></span> eGangotri Foundation</span>
+      <span>Archival tools to scale preservation workflows</span>
+    </div>
+  </footer>
+  <script>
+    const d = new Date();
+    document.getElementById('year').textContent = d.getFullYear();
+    document.getElementById('lastUpdated').textContent = d.toISOString().split('T')[0];
+  </script>
+</body>
+</html>
